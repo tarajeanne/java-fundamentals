@@ -23,7 +23,14 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
 
-        // write code here
+        int a = 10;
+        double b = a;
+
+        System.out.println(b);
+
+        b = 10.4;
+        a = (int)b;
+        System.out.println(a);
 
     }
 }

@@ -18,6 +18,14 @@ public class Exercise_01 {
 
         // write code here
 
+        int a = 5;
+        double b = 10.2311111111111111;
+        float c = 10.23f;
+        char d = 'a';
+        System.out.println("an int, a double, a float, and a char walk into a bar");
+        System.out.println(a + ", " + b + ", " + c + ", " + d);
+        System.out.println("That's it, that's the joke.");
+
     }
 }
 
