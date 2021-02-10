@@ -1,4 +1,6 @@
 package labs_examples.conditions_loops.labs;
+import java.sql.SQLOutput;
+import java.util.Scanner;
 
 /**
  * Conditions and Loops Exercise 2: Days of the week
@@ -16,7 +18,35 @@ public class Exercise_02 {
     public static void main(String[] args) {
 
         // 1) create scanner (don't forget to import Scanner!)
+        Scanner keyboard = new Scanner(System.in);
         // 2) prompt user
+        System.out.print("Pick a number between 1 and 7! ");
+        int dayNum = keyboard.nextInt();
+
+        if (dayNum == 1) {
+            System.out.println("Monday!");
+        }
+        else if (dayNum == 2) {
+            System.out.println("Tuesday!");
+        }
+        else if (dayNum == 3) {
+            System.out.println("Wednesday!");
+        }
+        else if (dayNum == 4) {
+            System.out.println("Thursday!");
+        }
+        else if (dayNum == 5) {
+            System.out.println("Friday!");
+        }
+        else if (dayNum == 6) {
+            System.out.println("Saturday!");
+        }
+        else if (dayNum == 7) {
+            System.out.println("Sunday!");
+        }
+        else {
+            System.out.println("That's not a day :(");
+        }
         // 3) assign input to variable as int
         // 4) write completed code here
 
