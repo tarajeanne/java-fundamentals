@@ -9,5 +9,19 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_04 {
+    public static void main (String[] args) {
 
+        String[][] family = {
+                {"Caroline"},
+                {"Mama", "Daddy"},
+                {"Nathan", "Crystal"},
+                {"Pete", "Mia", "Charlie", "Reyna"}
+        };
+
+        for (String[] group : family) {
+            for (String name : group) {
+                System.out.println(name);
+            }
+        }
+    }
 }
