@@ -1,6 +1,7 @@
-
-Without running the code below, please tell me what it will print.
-
+package labs_examples.objects_classes_methods.labs.oop.A_inheritance;//
+//Without running the code below, please tell me what it will print.
+//I will print "child called," because the method overrides the superclass method.
+//
 
 
 public class InheritanceTest

@@ -3,7 +3,7 @@ package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
 /**
  * Why does the output print in the order it does?
  *
- * You answer:
+ * You answer: Since C_1 inherits B, which inherits A, we must build A then B before building C.
  *
  */
 
