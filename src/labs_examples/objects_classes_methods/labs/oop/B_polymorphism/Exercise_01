@@ -1,8 +1,11 @@
 
 1) Demonstrate the three forms of Polymorphism:
     - Overloading
+    see Korra and character classes in A_Inheritance
     - Overriding
+    see Korra and character classes in A_Inheritance
     - Interfaces
+    see f
 
 2) Demonstrate the three forms of polymorphism again - but in a new set of classes. We want to lock this in.
 Challenge yourself. Build something you're proud of.
@@ -11,3 +14,4 @@ Challenge yourself. Build something you're proud of.
 parameter. Also have a setter that allows you to update the interface object. Through code, demonstrate that you
 understand how we can use Interfaces as dependencies (instance variables) and how useful and flexible they make our
 application.
+See "StoryController"
