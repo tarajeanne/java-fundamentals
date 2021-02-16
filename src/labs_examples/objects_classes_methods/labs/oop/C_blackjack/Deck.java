@@ -18,7 +18,7 @@ public class Deck {
         }
     }
     public Card drawCard() {
-        int cardNum = (int)(Math.random() * this.cards.size() + 1);
+        int cardNum = (int)(Math.random() * this.cards.size());
         Card drawnCard = this.cards.get(cardNum);
         this.cards.remove(cardNum);
         return drawnCard;
