@@ -2,6 +2,8 @@ package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
 import java.util.Scanner;
 
 public class BlackjackController {
+    public static int gamesPlayed;
+    public static int gamesToTheHouse;
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to Blackjack!");
@@ -17,6 +19,7 @@ public class BlackjackController {
         deal(players, deck);
         play(players, deck);
         resolve(dealer, players, deck);
+        gamesPlayed++;
         System.out.print("Play again? (Y/N) > ");
         String response = input.next();
         if (response.equals("Y")) {
@@ -61,6 +64,7 @@ public class BlackjackController {
 
     public static void resolve(Player dealer, Player[] players, Deck deck) {
         printHands(players);
+        boolean playerWon = false;
         for (int i = 0; i < players.length - 1; i ++) {
             Player player = players[i];
             if (player.hand.isBust()) {
@@ -70,14 +74,19 @@ public class BlackjackController {
             else if (player.hand.getHandValue() == dealer.hand.getHandValue()) {
                 System.out.println("Tie! " + player.name + " gets back " + player.getBet());
                 player.collectWinnings(player.getBet());
+                playerWon = true;
             }
             else if (dealer.hand.isBust() || player.hand.getHandValue() > dealer.hand.getHandValue()) {
                 System.out.println("Win! " + player.name + " wins " + player.getBet() * 2);
                 player.collectWinnings(player.getBet() * 2);
+                playerWon = true;
             }
             else {
                 System.out.println("Not quite! " + player.name + " loses " + player.getBet());
             }
+        }
+        if (!playerWon) {
+            gamesToTheHouse++;
         }
     }
 
