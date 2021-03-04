@@ -19,20 +19,43 @@ public class Exercise_02 {
         String outputPath = "./src/labs_examples/input_output/files/char_data_output.txt";
         try(BufferedReader br = new BufferedReader(new FileReader(inputPath))) {
             try(FileWriter w = new FileWriter(outputPath)) {
-                String l;
-                while ((l = br.readLine()) != null) {
-                    for (int i = 0; i < l.length(); i++) {
-                        char curr = l.charAt(i);
-                        if (curr == 't') {
-                            curr = 'a';
-                        }
-                        w.write(curr);
-                    }
-                    w.write("\n");
-                }
+                encrypt(br, w);
             }
         } catch (IOException e) {
             System.out.println(e.getMessage());
+        }
+        try(BufferedReader br = new BufferedReader(new FileReader(outputPath))) {
+            try(FileWriter w = new FileWriter(inputPath)) {
+                decrypt(br, w);
+            }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+    public static void encrypt(BufferedReader input, Writer output) throws IOException{
+        String l;
+        while ((l = input.readLine()) != null) {
+            for (int i = 0; i < l.length(); i++) {
+                char curr = l.charAt(i);
+                if (curr == 't') {
+                    curr = '-';
+                }
+                output.write(curr);
+            }
+            output.write("\n");
+        }
+    }
+    public static void decrypt(BufferedReader input, Writer output) throws IOException {
+        String l;
+        while ((l = input.readLine()) != null) {
+            for (int i = 0; i < l.length(); i++) {
+                char curr = l.charAt(i);
+                if (curr == '-') {
+                    curr = 't';
+                }
+                output.write(curr);
+            }
+            output.write("\n");
         }
     }
 }

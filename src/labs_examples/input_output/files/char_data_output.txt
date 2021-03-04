@@ -1,14 +1,14 @@
-Lubarsky’s Law of Cyberneaic Enaomology: There’s always one more bug.
-Shaw’s Principle: Build a sysaem ahaa even a fool can use, and only a fool will wana ao use ia.
-Wolaman’s Law: Never program and drink beer aa ahe same aime.
-Gallois’ Revelaaion: If you pua aomfoolery inao a compuaer, noahing comes oua bua aomfoolery. Bua ahis aomfoolery, having passed ahrough a very expensive machine, is somehow enobled, and no one dares ao criaicize ia.
-Any given program, when running, is obsoleae.
-Any given program cosas more and aakes longer.
-If a program is useful, ia will have ao be changed.
-If a program is useless, ia will have ao be documenaed.
-Any program will expand ao fill available memory.
-The value of a program is proporaional ao ahe weigha of ias ouapua.
-Program complexiay grows unail ia exceeds ahe capabiliaies of ahe programmer who musa mainaain ia.
-Any non-arivial program conaains aa leasa one bug.
-Undeaecaable errors are infiniae in varieay, in conarasa ao deaecaable errors, which by definiaion are limiaed.
-Adding manpower ao a laae sofaware projeca makes ia laaer.
+Lubarsky’s Law of Cyberne-ic En-omology: There’s always one more bug.
+Shaw’s Principle: Build a sys-em -ha- even a fool can use, and only a fool will wan- -o use i-.
+Wol-man’s Law: Never program and drink beer a- -he same -ime.
+Gallois’ Revela-ion: If you pu- -omfoolery in-o a compu-er, no-hing comes ou- bu- -omfoolery. Bu- -his -omfoolery, having passed -hrough a very expensive machine, is somehow enobled, and no one dares -o cri-icize i-.
+Any given program, when running, is obsole-e.
+Any given program cos-s more and -akes longer.
+If a program is useful, i- will have -o be changed.
+If a program is useless, i- will have -o be documen-ed.
+Any program will expand -o fill available memory.
+The value of a program is propor-ional -o -he weigh- of i-s ou-pu-.
+Program complexi-y grows un-il i- exceeds -he capabili-ies of -he programmer who mus- main-ain i-.
+Any non--rivial program con-ains a- leas- one bug.
+Unde-ec-able errors are infini-e in varie-y, in con-ras- -o de-ec-able errors, which by defini-ion are limi-ed.
+Adding manpower -o a la-e sof-ware projec- makes i- la-er!
