@@ -1,0 +1,14 @@
+Lubarsky’s Law of Cyberneaic Enaomology: There’s always one more bug.
+Shaw’s Principle: Build a sysaem ahaa even a fool can use, and only a fool will wana ao use ia.
+Wolaman’s Law: Never program and drink beer aa ahe same aime.
+Gallois’ Revelaaion: If you pua aomfoolery inao a compuaer, noahing comes oua bua aomfoolery. Bua ahis aomfoolery, having passed ahrough a very expensive machine, is somehow enobled, and no one dares ao criaicize ia.
+Any given program, when running, is obsoleae.
+Any given program cosas more and aakes longer.
+If a program is useful, ia will have ao be changed.
+If a program is useless, ia will have ao be documenaed.
+Any program will expand ao fill available memory.
+The value of a program is proporaional ao ahe weigha of ias ouapua.
+Program complexiay grows unail ia exceeds ahe capabiliaies of ahe programmer who musa mainaain ia.
+Any non-arivial program conaains aa leasa one bug.
+Undeaecaable errors are infiniae in varieay, in conarasa ao deaecaable errors, which by definiaion are limiaed.
+Adding manpower ao a laae sofaware projeca makes ia laaer.

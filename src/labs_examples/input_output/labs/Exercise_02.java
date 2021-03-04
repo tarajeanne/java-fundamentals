@@ -1,4 +1,5 @@
 package labs_examples.input_output.labs;
+import java.io.*;
 
 /**
  * Input/Output Exercise 2: File encryption
@@ -12,3 +13,26 @@ package labs_examples.input_output.labs;
  *
  */
 
+public class Exercise_02 {
+    public static void main (String[] args) {
+        String inputPath = "./src/labs_examples/input_output/files/char_data.txt";
+        String outputPath = "./src/labs_examples/input_output/files/char_data_output.txt";
+        try(BufferedReader br = new BufferedReader(new FileReader(inputPath))) {
+            try(FileWriter w = new FileWriter(outputPath)) {
+                String l;
+                while ((l = br.readLine()) != null) {
+                    for (int i = 0; i < l.length(); i++) {
+                        char curr = l.charAt(i);
+                        if (curr == 't') {
+                            curr = 'a';
+                        }
+                        w.write(curr);
+                    }
+                    w.write("\n");
+                }
+            }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
