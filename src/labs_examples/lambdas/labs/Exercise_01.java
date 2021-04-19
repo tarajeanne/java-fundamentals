@@ -23,3 +23,23 @@ package labs_examples.lambdas.labs;
  *
  *
  */
+@FunctionalInterface
+interface Rando {
+    public void randoMethod();
+}
+
+public class Exercise_01 {
+    public static void main(String[] args) {
+        Rando anonRando = new Rando() {
+            @Override
+            public void randoMethod() {
+                System.out.println("We're in the anonymous inner class!!");
+            }
+        };
+
+        Rando lambdaRando = () -> System.out.println(("We're in Lambda Rando!"));
+        anonRando.randoMethod();
+        lambdaRando.randoMethod();
+
+    }
+}

@@ -1,4 +1,5 @@
 package labs_examples.lambdas.labs;
+import java.util.function.*;
 
 /**
  * Lambdas Exercise 3:
@@ -8,3 +9,9 @@ package labs_examples.lambdas.labs;
  *      3) Demonstrate the use of a constructor reference
  *
  */
+
+public class Exercise_03 {
+    public static void main(String[] args) {
+        System.out.println("See exercise 2");
+    }
+}

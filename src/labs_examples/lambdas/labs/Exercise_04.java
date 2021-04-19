@@ -1,5 +1,12 @@
 package labs_examples.lambdas.labs;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
 /**
  * Lambdas Exercise 4:
  *
@@ -20,5 +27,29 @@ package labs_examples.lambdas.labs;
  *      9) Demonstrate the anyMatch() function.
  *      10) Demonstrate the allMatch() function.
  *      11) Demonstrate the collect() terminal operation to store resulting values into a List
- *      
  */
+
+public class Exercise_04 {
+    public static void main(String[] args) throws IOException {
+        IntStream.range(1, 15).forEach(System.out::println);
+        int[] arr = {1, 5, 8, 45, 8};
+        IntStream stream = Arrays.stream(arr);
+        int sum = stream.reduce(0, (a, b) -> a + b);
+        System.out.println(sum);
+        IntStream stream2 = Arrays.stream(arr);
+        int sum2 = stream2.map((i) -> i * 3).sum();
+        System.out.println(sum2);
+        IntStream stream3 = Arrays.stream(arr);
+        int avg = (int)stream3.filter((i) -> i < 30).average().getAsDouble();
+        System.out.println(avg);
+
+        Stream<String> rows1 = Files.lines(Paths.get("./src/labs_examples/lambdas/labs/stream_text_lab.csv"));
+        rows1.forEach(System.out::println);
+
+        Stream<String> rows2 = Files.lines(Paths.get("./src/labs_examples/lambdas/labs/stream_text_lab.csv"));
+        rows2.map((line) -> line.split(",")).forEach((lineArr) -> System.out.println(lineArr[1]));
+
+        Stream<String> rows3 = Files.lines(Paths.get("./src/labs_examples/lambdas/labs/stream_text_lab.csv"));
+        int csvSum = rows3.map((line) -> Integer.getInteger(line.split(",")[2])).reduce(0, (a, b) -> a + b);
+    }
+}
